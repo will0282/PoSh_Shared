@@ -1,8 +1,13 @@
 <# 
 This script checks for registry keys for TLS 1.0, 1.1, 1.2, RC4, Triple 3DES
+
+Pre-Reqs:
+-WinRM service must be running on remote endpoint.
+-PSRemoting must be enabled on remote endpoint.
+-Script must be run as ADM
 #>
 
-$Cred = 'DOMAIN\YourADMCredentials' #i.e. $Cred = 'microsoft\JSmithADM
+$Cred = 'DOMAIN\YourADMCredentials' #i.e. $Cred = 'microsoft\JSmithADM'
 $pc = 'XXXXXCOMPUTER_Name'
 
 Invoke-Command -ComputerName $pc -Credential $Cred -ScriptBlock {
