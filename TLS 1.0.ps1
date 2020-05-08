@@ -127,7 +127,7 @@ Write-Host $CompHost -ForegroundColor Yellow
     }
 
 ##### Triple 3DES
-    if($RegistryCheckerSSLv2.DisabledByDefault -eq 0){ 
+    if($RegistryChecker3DES.Enabled -eq 0){ 
     Write-Host "################################"       
         Write-Host "Triple 3DES | SCHANNEL\Ciphers\Triple DES 168 | Value = 0 | Registry Key exist" -ForegroundColor Green
         Write-Host "################################"       
