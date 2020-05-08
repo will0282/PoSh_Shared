@@ -57,7 +57,7 @@ Write-Host $CompHost -ForegroundColor Yellow
 ##### TLS 1.0
     if($RegistryChecker1_0A.DisabledByDefault -eq 1){
         Write-Host "################################"
-        Write-Host "TLS 1.0\Client\DisabledByDefault | Value = 1 | Registry Key exist" -ForegroundColor Green
+        Write-Host "TLS 1.0 | TLS 1.0\Client\DisabledByDefault | Value = 1 | Registry Key exist" -ForegroundColor Green
     }Else{                
         Write-Host "################################"
         Write-Host "TLS 1.0 | TLS 1.0\Client\DisabledByDefault | Value = 1 | It does not exist" -ForegroundColor Red
