@@ -1,0 +1,16 @@
+##########################################
+#Remove 3D objects folder from Windows
+# Go to this registry locations
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
+
+Delete the key that ends on: 513A
+{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}  -->This one is assigned to the 3D object
+
+##########################################
+# Did not work properly
+# Disable Bing search
+Create a D-Word (32bit) and name it:
+BingSearchEnabled
+
+and set the value to 0
+##########################################
