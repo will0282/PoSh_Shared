@@ -1,0 +1,18 @@
+Download the Pip script
+Go to the following site:
+https://bootstrap.pypa.io/get-pip.py
+Right click and save txt as a file.
+Remember this file location.
+
+Install pip in Python (Windows 10)
+Open [Windows] Command Prompt (Not Python's)
+Navigate to the location of the file in the previous step.
+type the following command:
+python get-pip.py
+
+Alternatively, you can open it with python and run the F5 to run the script
+
+Install Netmiko in python (Windows 10)
+Open [Windows] Command Prompt (Not Python's)
+type the following command:
+python -m pip install netmiko
