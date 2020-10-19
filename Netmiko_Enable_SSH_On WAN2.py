@@ -6,14 +6,14 @@ print('Start of the script ! ! !')
 print(' ')
 #-------------------------------------------
 # Create a dictionary representing the device
-USCG_Test = { 'host': 'FGT60E',
+BREAD_Test = { 'host': 'FGT60E',
           'device_type': 'fortinet',
           'ip': '192.168.1.99',
           'username': 'admin',
           'password': 'admin'}
 
 # Establish an SSH connection to the device by passing in the device dictionary
-net_connect = ConnectHandler(**USCG_Test)
+net_connect = ConnectHandler(**BREAD_Test)
 
 # Commands to execute in the connected device
 config_commands = [ 'config system interface',
